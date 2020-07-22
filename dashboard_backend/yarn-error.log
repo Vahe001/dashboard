@@ -1,0 +1,61 @@
+Arguments: 
+  /usr/bin/node /usr/local/bin/yarn
+
+PATH: 
+  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  10.19.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: getaddrinfo EAI_AGAIN registry.yarnpkg.com registry.yarnpkg.com:443
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:56:26)
+
+npm manifest: 
+  {
+    "name": "dashboard_backend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "start": "node_modules/.bin/babel-node app.js",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "@babel/cli": "^7.10.3",
+      "@babel/core": "^7.10.3",
+      "@babel/node": "^7.10.3",
+      "@babel/plugin-proposal-object-rest-spread": "^7.10.3",
+      "@babel/plugin-transform-runtime": "^7.10.3",
+      "@babel/polyfill": "^7.10.1",
+      "@babel/preset-env": "^7.10.3",
+      "@babel/register": "^7.10.3",
+      "@babel/runtime": "^7.10.3",
+      "babel-plugin-transform-function-bind": "7.0.0-alpha.20",
+      "bcrypt": "^5.0.0",
+      "body-parser": "^1.19.0",
+      "cors": "^2.8.5",
+      "dotenv": "^8.2.0",
+      "express": "^4.17.1",
+      "jsonwebtoken": "^8.5.1",
+      "lodash": "^4.17.15",
+      "pg": "^7.18.2",
+      "pg-hstore": "^2.3.3",
+      "sequelize": "^5.22.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
