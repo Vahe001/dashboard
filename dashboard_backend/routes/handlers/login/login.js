@@ -14,8 +14,7 @@ async function login (req, res) {
             }
         })
         const token = jwt.sign({ id: user.id, email: user.email }, process.env.TOKEN_SECRET_KEY, {expiresIn: config.tokenExpireTime})
-        const refreshToken = jwt.sign({ id: user.id, email: user.email }, process.env.REFRESH_TOKEN_SECRET_KEY, {expiresIn: config.refreshTokenExpireTime})
-        res.json({user, token, refreshToken})
+        res.json({user, token})
     } catch (e) {
         console.error(e);
         res.status(500).send('Something broke!');

@@ -9,9 +9,8 @@ async function login(idToken) {
             'Content-Type': 'application/json',
         }
     })
-    const { user, token, refreshToken } = data
+    const { user, token } = data
     localStorage.setItem('token', token)
-    localStorage.setItem('refreshToken', refreshToken)
     localStorage.setItem('user', JSON.stringify(user))
 }
 

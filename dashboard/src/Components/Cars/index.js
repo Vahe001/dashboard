@@ -37,7 +37,6 @@ export default class Cars extends Component {
     }
     logout = (data) => {
         localStorage.removeItem('token')
-        localStorage.removeItem('refreshToken')
         localStorage.removeItem('user')
         window.location.reload(true);
     }
@@ -169,7 +168,6 @@ export default class Cars extends Component {
     }
     render() {
         return (<div>
-
             <div className={cssClasses.topDiv}>
                 <GoogleLogout
                     clientId={process.env.REACT_APP_CLIENT_ID}

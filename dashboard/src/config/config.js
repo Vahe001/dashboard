@@ -4,11 +4,5 @@ export default {
     URLS: {
         login: process.env.REACT_APP_SERVER_URL + 'login',
         cars: process.env.REACT_APP_SERVER_URL + 'cars'
-    },
-    AuthReducer: {
-        refresh_token: 'refresh_token',
-        logout: 'logout',
-        addUserData: 'add_user_data',
-        login_fetch_success: 'refresh_token'
     }
 }
